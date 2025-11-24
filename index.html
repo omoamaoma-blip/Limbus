@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang = vi>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Gambling Ishmael</title>
+  <style>
+body {
+  background-image: url('https://limbuscompany.wiki.gg/images/Family_Hierarch_Candidate_Ishmael_Full.png?a50092=&format=original');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* nền không di chuyển */
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: #333;
+  color: orange;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.info-table {
+  width: 100%;
+  background: #000000;
+  color: white;
+  border: 2px solid #500000;
+  font-family: Arial;
+}
+.skill-table {
+  width: 100%;
+  background: #000000;
+  color: white;
+  border: 2px solid #500000;
+  font-family: Arial;
+}
+
+.section-title {
+  background: #810100;
+  color: white;
+  padding: 6px 10px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #400000;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1);
+  border-bottom: 1px solid #333;
+}
+.batk {
+  
+} 
+.cell {
+  padding: 8px;
+}
+.coin {
+  background: #000000;
+  text-align: center;
+  border-bottom: 4px solid #400000;
+}
+.cell.label {
+  background: #818589;
+  font-weight: bold;
+  text-align: center;
+}
+.skilleff {
+  display: grid;
+  grid-template-collums: repeat(2, 1);
+  background: #000000;
+  font-weight: bold;
+  border: 2px solid #400000;
+}
+.cell.value {
+  text-align: center;
+  background: #1f1d1d;
+  color: white;
+}
+
+.cell.icon {
+  background: #1F1B1A;
+  text-align: center;
+  font-size: 20px;
+}
+
+.cell.full {
+  text-align: center;
+  grid-column: 1 / 5;
+  background: #808080;
+}
+
+.res-type {
+  text-align: center;
+  padding: 12px;
+}
+.ineff {
+  background: #6e6b62;
+  color: #a3a29d;
+}
+.normal {
+  background: #7d6b2f;
+  color: #c4c06a;
+}
+.fatal {
+  background: #400;
+  color: #ffaaaa;
+}
+
+.tag {
+  background: #7d4625;
+  color: #c48929;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+  display: inline-block;
+  border: 1px solid #666;
+}
+.tabs {
+  display: flex;
+  border-bottom: 3px solid #500000;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  background: #1a1a1a;
+  color: #ccc;
+  border: none;
+  padding: 10px 18px;
+  cursor: pointer;
+  border-right: 1px solid #333;
+  font-size: 16px;
+}
+
+.tab-btn:hover {
+  background: #333;
+}
+
+.tab-btn.active {
+  background: #8c0000;
+  color: white;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  background: #222;
+  padding: 15px;
+  border: 2px solid #500000;
+  color: white;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>Jeong's Office Rep Ishmael</header>
+  <img id="myImage" src="https://limbuscompany.wiki.gg/images/Jeong%27s_Office_Rep_Ishmael_Full.png?45c8a5=&format=original" width="964" style="display:block; margin-bottom:10px;">
+
+<button id="swapBtn">Đổi ảnh</button>
+
+<script>
+  const btn = document.getElementById("swapBtn");
+  const img = document.getElementById("myImage");
+
+  const img1 = "https://limbuscompany.wiki.gg/images/Jeong%27s_Office_Rep_Ishmael_Full.png?45c8a5=&format=original";
+  const img2 = "https://limbuscompany.wiki.gg/images/Jeong%27s_Office_Rep_Ishmael_Full_Uptied.png?417f56=&format=original";
+
+  let toggle = true;
+
+  btn.onclick = () => {
+    img.src = toggle ? img2 : img1;
+    toggle = !toggle;
+  };
+</script>
+<style>
+  #swapBtn {
+    padding: 10px 16px;
+    background: #F28500;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  #swapBtn:hover {
+    background: #F28500;
+  }
+</style>
+  <div class="info-table">
+    <div class ="section-title">Info</div>
+    <div class="row">
+      <div class="cell label">Rarity</div>
+      <div class="cell value"><img src="https://limbuscompany.wiki.gg/images/thumb/IDNumber3.png/42px-IDNumber3.png?bae858"></div>
+      <div class="cell label">World</div>
+      <div class="cell value"><img src="https://limbuscompany.wiki.gg/images/thumb/World_of_the_Former_Library_Guests_-_1_Icon.png/25px-World_of_the_Former_Library_Guests_-_1_Icon.png?7314e5"></div>
+    </div>
+    <div class="row">
+      <div class="cell label">Traits</div>
+      <div class="cell" colspan="3">
+        <span class="tag">Fixer</span>
+        <span class="tag">Associate Office - Öufi </span>
+        <span class="tag">Jeong's Office</span>
+      </div>
+    </div>
+    <div class="section-title">Status</div>
+    <div class="row">
+      <div class="cell icon"><img src="https://limbuscompany.wiki.gg/images/thumb/HP.png/25px-HP.png?5cf7dd"></div>
+      <div class="cell value">213</div>
+      <div class="cell icon"><img src="https://limbuscompany.wiki.gg/images/thumb/SPEED.png/25px-SPEED.png?1116c8"></div>
+      <div class="cell value">3~8</div>
+      <div class="cell icon"><img src="https://limbuscompany.wiki.gg/images/thumb/Defense.png/23px-Defense.png?b5e730"></div>
+      <div class="cell value">55</div>
+    </div>
+    <div class="section-title">Stagger Threshold</div>
+    <div class="row">
+      <div class="cell full"><p style="color: yellow; font-size: 20px;">65%(139<img src="https://limbuscompany.wiki.gg/images/thumb/HP.png/25px-HP.png?5cf7dd">)</p>
+        <p style="font-size: 30px;">-</p><p style="color: red; font-size: 20px;">35%(75<img src="https://limbuscompany.wiki.gg/images/thumb/HP.png/25px-HP.png?5cf7dd">)</p>
+      </div>
+    </div>
+    <div class="section-title">Resistance</div>
+    <div class="row">
+      <div class="cell res-type ineff"><img src="https://limbuscompany.wiki.gg/images/thumb/Slash.png/25px-Slash.png?f764b5">Ineff.<br>[×0.5]</div>
+      <div class="cell res-type normal"><img src="https://limbuscompany.wiki.gg/images/thumb/Pierce.png/25px-Pierce.png?1111a2">Normal<br>[×1]</div>
+      <div class="cell res-type fatal"><img src="https://limbuscompany.wiki.gg/images/thumb/Blunt.png/25px-Blunt.png?4f33d9">Fatal<br>[×2]</div>
+    </div>
+  </div>
+  <div class="skill-table">
+    <div class="section-title">Skills</div>
+    <div class="row">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="skill1">Skill 1</button>
+        <button class="tab-btn active" data-tab="skill2">Skill 2</button>
+        <button class="tab-btn active" data-tab="skill3">Skill 3</button>
+      </div>
+    </div>
+    <div class="tab-content active" id="skill1">
+      <div class="row">
+        <h3><img src="https://limbuscompany.wiki.gg/images/thumb/Tsuru-giri_-%E9%B6%B4%E6%96%AC%E3%82%8A-_Ishmael_Icon.png/74px-Tsuru-giri_-%E9%B6%B4%E6%96%AC%E3%82%8A-_Ishmael_Icon.png?658dbb" width="240"><p style="font-size: 24px">Skill 1 : Tsugu-giri[鶴斬り]<img src="https://limbuscompany.wiki.gg/images/thumb/SkillAttack.png/25px-SkillAttack.png?97118e">57 (55+2)<p style="color: yellow; font-size: 24px;">Atk Weight ⯀</p>Amt x3</p></h3>
+        <div class="skilleff">
+        <div class="coin"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><br><p style="font-size: 18px">4</p><img src="https://limbuscompany.wiki.gg/images/thumb/Slash.png/25px-Slash.png?f764b5" width="45"><p style="font-size: 18px;">+4</p></div>
+        <div class="batk"><p style="font-size: 18px;">[Khi sử dụng] Nếu kĩ năng còn lại trong cùng ô kĩ năng là một kĩ năng khác,<img src="https://limbuscompany.wiki.gg/images/thumb/Discard.png/25px-Discard.png?38f60e">Discard kĩ năng đó</p><p style="font-size: 18px;">[Khi sử dụng] Coin Power +1 với mỗi 6(<img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor + <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking) trên kẻ địch (tối đa 2)</p></div>
+          <div class="watk"><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36"> [Khi Đánh] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking Count</p><br><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36"> [Xu Ngửa] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking Count</p>
+            <br><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0"> [Khi Đánh] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7" width="36">Tremor Count</p><br><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="36"> [Xu Ngửa] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor Count</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
