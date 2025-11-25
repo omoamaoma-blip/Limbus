@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang = vi>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Gambling Ishmael</title>
+  <style>
+body {
+  background-image: url('https://limbuscompany.wiki.gg/images/Family_Hierarch_Candidate_Ishmael_Full.png?a50092=&format=original');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* nền không di chuyển */
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: #333;
+  color: orange;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.info-table {
+  width: 100%;
+  background: #000000;
+  color: white;
+  border: 2px solid #500000;
+  font-family: Arial;
+}
+.skill-table {
+  width: 100%;
+  background: #000000;
+  color: white;
+  border: 2px solid #500000;
+  font-family: Arial;
+}
+
+.section-title {
+  background: #810100;
+  color: white;
+  padding: 6px 10px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #400000;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1);
+  border-bottom: 1px solid #333;
+}
+.batk {
+  display: grid;
+  grid-template-columns: repeat(4, 1);
+} 
+.cell {
+  padding: 8px;
+}
+.coin {
+  background: #000000;
+  text-align: center;
+  border-bottom: 4px solid #400000;
+}
+.cell.label {
+  background: #818589;
+  font-weight: bold;
+  text-align: center;
+}
+.skilleff {
+  background: #000000;
+  font-weight: bold;
+  border: 2px solid #400000;
+}
+.cell.value {
+  text-align: center;
+  background: #1f1d1d;
+  color: white;
+}
+
+.cell.icon {
+  background: #1F1B1A;
+  text-align: center;
+  font-size: 20px;
+}
+
+.cell.full {
+  text-align: center;
+  grid-column: 1 / 5;
+  background: #808080;
+}
+.res-type {
+  text-align: center;
+  padding: 12px;
+}
+.ineff {
+  background: #6e6b62;
+  color: #a3a29d;
+}
+.normal {
+  background: #7d6b2f;
+  color: #c4c06a;
+}
+.fatal {
+  background: #400;
+  color: #ffaaaa;
+}
+
+.tag {
+  background: #7d4625;
+  color: #c48929;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-right: 6px;
+  display: inline-block;
+  border: 1px solid #666;
+}
+.tabs, .sub-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-btn, .sub-btn {
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.tab-btn.active, .sub-btn.active {
+    border-bottom: 3px solid gold;
+    color: gold;
+}
+
+.tab-content, .sub-content {
+    display: none;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+.tab-content.active, .sub-content.active {
+    display: block;
+}
+  </style>
+</head>
+<body>
+  <header>Jeong's Office Rep Ishmael</header>
+  <img id="myImage" src="https://limbuscompany.wiki.gg/images/Jeong%27s_Office_Rep_Ishmael_Full.png?45c8a5=&format=original" width="964" style="display:block; margin-bottom:10px;">
+
+<button id="swapBtn">Đổi ảnh</button>
+
+<script>
+  const btn = document.getElementById("swapBtn");
+  const img = document.getElementById("myImage");
+
+  const img1 = "https://limbuscompany.wiki.gg/images/Jeong%27s_Office_Rep_Ishmael_Full.png?45c8a5=&format=original";
+  const img2 = "https://limbuscompany.wiki.gg/images/Jeong%27s_Office_Rep_Ishmael_Full_Uptied.png?417f56=&format=original";
+
+  let toggle = true;
+
+  btn.onclick = () => {
+    img.src = toggle ? img2 : img1;
+    toggle = !toggle;
+  };
+</script>
+<style>
+  #swapBtn {
+    padding: 10px 16px;
+    background: #F28500;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  #swapBtn:hover {
+    background: #F28500;
+  }
+</style>
+  <div class="info-table">
+    <div class ="section-title">Info</div>
+    <div class="row">
+      <div class="cell label">Rarity</div>
+      <div class="cell value"><img src="https://limbuscompany.wiki.gg/images/thumb/IDNumber3.png/42px-IDNumber3.png?bae858"></div>
+      <div class="cell label">World</div>
+      <div class="cell value"><img src="https://limbuscompany.wiki.gg/images/thumb/World_of_the_Former_Library_Guests_-_1_Icon.png/25px-World_of_the_Former_Library_Guests_-_1_Icon.png?7314e5"></div>
+    </div>
+    <div class="row">
+      <div class="cell label">Traits</div>
+      <div class="cell" colspan="3">
+        <span class="tag">Fixer</span>
+        <span class="tag">Associate Office - Öufi </span>
+        <span class="tag">Jeong's Office</span>
+      </div>
+    </div>
+    <div class="section-title">Status</div>
+    <div class="row">
+      <div class="cell icon"><img src="https://limbuscompany.wiki.gg/images/thumb/HP.png/25px-HP.png?5cf7dd"></div>
+      <div class="cell value">213</div>
+      <div class="cell icon"><img src="https://limbuscompany.wiki.gg/images/thumb/SPEED.png/25px-SPEED.png?1116c8"></div>
+      <div class="cell value">3~8</div>
+      <div class="cell icon"><img src="https://limbuscompany.wiki.gg/images/thumb/Defense.png/23px-Defense.png?b5e730"></div>
+      <div class="cell value">55</div>
+    </div>
+    <div class="section-title">Stagger Threshold</div>
+    <div class="row">
+      <div class="cell full"><p style="color: yellow; font-size: 20px;">65%(139<img src="https://limbuscompany.wiki.gg/images/thumb/HP.png/25px-HP.png?5cf7dd">)</p>
+        <p style="font-size: 30px;">-</p><p style="color: red; font-size: 20px;">35%(75<img src="https://limbuscompany.wiki.gg/images/thumb/HP.png/25px-HP.png?5cf7dd">)</p>
+      </div>
+    </div>
+    <div class="section-title">Resistance</div>
+    <div class="row">
+      <div class="cell res-type ineff"><img src="https://limbuscompany.wiki.gg/images/thumb/Slash.png/25px-Slash.png?f764b5">Ineff.<br>[×0.5]</div>
+      <div class="cell res-type normal"><img src="https://limbuscompany.wiki.gg/images/thumb/Pierce.png/25px-Pierce.png?1111a2">Normal<br>[×1]</div>
+      <div class="cell res-type fatal"><img src="https://limbuscompany.wiki.gg/images/thumb/Blunt.png/25px-Blunt.png?4f33d9">Fatal<br>[×2]</div>
+    </div>
+  </div>
+  <div class="skill-table">
+    <div class="section-title">Skills</div>
+    <div class="row">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="skill1">Skill 1</button>
+        <button class="tab-btn active" data-tab="skill2">Skill 2</button>
+        <button class="tab-btn active" data-tab="skill3">Skill 3</button>
+        <button class="tab-btn active" data-tab="defenseskill">Defensive</button>
+      </div>
+    </div>
+    <div class="tab-content active" id="skill1">
+      <div class="row">
+        <h3><img src="https://limbuscompany.wiki.gg/images/thumb/Tsuru-giri_-%E9%B6%B4%E6%96%AC%E3%82%8A-_Ishmael_Icon.png/74px-Tsuru-giri_-%E9%B6%B4%E6%96%AC%E3%82%8A-_Ishmael_Icon.png?658dbb" width="240"><p style="font-size: 24px">Skill 1 : Tsugu-giri[鶴斬り]<img src="https://limbuscompany.wiki.gg/images/thumb/SkillAttack.png/25px-SkillAttack.png?97118e">57 (55+2)</p><p style="color: yellow; font-size: 24px;">Atk Weight ⯀</p><p style="font-size: 24px;">Amt. 3x</p></h3>
+        <div class="skilleff">
+          <div class="coin"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><br><p style="font-size: 18px">4</p><img src="https://limbuscompany.wiki.gg/images/thumb/Slash.png/25px-Slash.png?f764b5" width="45"><p style="font-size: 18px;">+4</p></div>
+          <div class="batk"><p style="font-size: 18px;">[Khi sử dụng] Nếu kĩ năng còn lại trong cùng ô kĩ năng là một kĩ năng khác,<img src="https://limbuscompany.wiki.gg/images/thumb/Discard.png/25px-Discard.png?38f60e">Discard kĩ năng đó</p><p style="font-size: 18px;">[Khi sử dụng] Coin Power +1 với mỗi 6(<img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor + <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking) trên kẻ địch (tối đa 2)</p></div>
+          <div class="watk"><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36"> [Khi Đánh] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking Count<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36"> [Xu Ngửa] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking Count</p>
+            <br><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="36"> [Khi Đánh] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor Count<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="36"> [Xu Ngửa] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor Count</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content active" id="skill2">
+      <div class="row">
+        <h3><img src="https://limbuscompany.wiki.gg/images/thumb/Susuki_Misdirection_Ishmael_Icon.png/74px-Susuki_Misdirection_Ishmael_Icon.png?bd9d4a" width="240"><p style="font-size: 24px;">Skill 2 : Susuki Misdirection<img src="https://limbuscompany.wiki.gg/images/thumb/SkillAttack.png/25px-SkillAttack.png?97118e">58 (55+3)</p><p style="color: yellow; font-size: 24px;">Atk Weight ⯀</p><p style="font-size: 24px;">Amt. 2x</p></h3>
+        <div class="skilleff">
+          <div class="coin"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><br><p style="font-size: 18px;">4</p><img src="https://limbuscompany.wiki.gg/images/thumb/Slash.png/25px-Slash.png?f764b5" width="45"><p style="font-size: 18px;">+4</p></div>
+          <div class="batk"><p style="font-size: 18px;">[Khi sử dụng] Nếu kĩ năng còn lại trong cùng ô kĩ năng là một kĩ năng khác,<img src="https://limbuscompany.wiki.gg/images/thumb/Discard.png/25px-Discard.png?38f60e">Discard kĩ năng đó</p><p style="font-size: 18px">[Khi sử dụng] Coin Power +1 với mỗi 6(<img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor + <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking) trên kẻ địch (tối đa 2)</p></div>
+          <div class="watk"><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36"> [Khi Đánh] Gắn 2 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36"> [Xu Ngửa] Gắn 1 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking</p>
+            <br><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="36"> [Khi Đánh] Gắn 2 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="36"> [Xu Ngửa] Gắn 1 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor</p>
+            <br><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect3.png/25px-CoinEffect3.png?5461a2" width="36"> [Khi Đánh] Hồi 5 SP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content active" id="skill3">
+      <div class="row">
+        <div class="sub-tabs">
+        <button class="sub-btn active" onclick="openSub(event, 's3-1')">Skill 3 - 1</button>
+        <button class="sub-btn" onclick="openSub(event, 's3-2')">Skill 3 - 2</button>       
+        </div>
+      </div>
+      <div id="s3-1" class="sub-content active">
+        <h3><img src="https://limbuscompany.wiki.gg/images/thumb/Sakura-sen_-%E6%A1%9C%E9%96%83-_Ishmael_Icon.png/74px-Sakura-sen_-%E6%A1%9C%E9%96%83-_Ishmael_Icon.png?60a570" width="250"><p style="font-size: 24px">Skill 3-1 : Sakura-sen[桜閃]<img src="https://limbuscompany.wiki.gg/images/thumb/SkillAttack.png/25px-SkillAttack.png?97118e">59 (55+4)</p><p style="color: yellow; font-size: 24px">Atk Weight ⯀</p><p style="font-size: 24px;">Amt. 1x</p></h3>
+        <div class="skilleff">
+          <div class="coin"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><br><p style="font-size: 18px">5</p><img src="https://limbuscompany.wiki.gg/images/thumb/Slash.png/25px-Slash.png?f764b5" width="40"><p style="font-size: 18px">+4</p></div>
+          <div class="batk"><p style="font-size: 18px">Gây +10% sát thương với mỗi <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency trên bản thân</p><p style="font-size: 18px">[Khi sử dụng] Nếu kĩ năng còn lại trong cùng ô kĩ năng là một kĩ năng khác, <img src="https://limbuscompany.wiki.gg/images/thumb/Discard.png/25px-Discard.png?38f60e">Discard kĩ năng đó.</p><p style="font-size: 18px">[Khi sử dụng] Coin Power +1 với mỗi 6(<img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor + <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking) trên kẻ địch (tối đa 3)</p></div>
+          <div class="watk"><p style="font-size: 24px"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36">[Khi Đánh] Gắn +2 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor Count<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36">[Khi Đánh] Gắn +2 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking Count<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="36">[Xu Ngửa] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking Count</p>
+            <br><p style="font-size: 24px;"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="36">[Khi Đánh] Gắn <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">3 Tremor<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="36">[Khi Đánh] Gắn <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">3 Sinking<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="36">[Xu Ngửa] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor Count</p>
+            <br><p style="font-size: 24px;">Nếu kẻ địch ở trong trạng thái <img src="https://limbuscompany.wiki.gg/images/thumb/Amplitude_Conversion.png/25px-Amplitude_Conversion.png?e9d691">Ampltitude Conversion hoặc <img src="https://limbuscompany.wiki.gg/images/thumb/Amplitude_Entanglement.png/25px-Amplitude_Entanglement.png?66c5fb">Ampltitude Entanglement, Xu này gây +48% sát thương<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect3.png/25px-CoinEffect3.png?5461a2" width="36">[Khi Đánh] Nếu kẻ địch không ở trong trạng thái <img src="https://limbuscompany.wiki.gg/images/thumb/Amplitude_Conversion.png/25px-Amplitude_Conversion.png?e9d691">Ampltitude Conversion, kích hoạt <img src="https://limbuscompany.wiki.gg/images/thumb/Amplitude_Conversion.png/25px-Amplitude_Conversion.png?e9d691">Ampltitude Conversion thành <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor_-_Decay.png/25px-Tremor_-_Decay.png?1b21f0">Tremor-Decay</p>
+          </div>
+        </div>
+      </div>
+      <div id="s3-2" class="sub-content">
+        <h3><img src="https://limbuscompany.wiki.gg/images/thumb/K%C5%8Dzan_-%E5%85%89%E6%96%AC-_Ishmael_Icon.png/74px-K%C5%8Dzan_-%E5%85%89%E6%96%AC-_Ishmael_Icon.png?ef2a4d" width="250"><p style="font-size: 24px;">Skill 3-2 : Kōzan[光斬]<img src="https://limbuscompany.wiki.gg/images/thumb/SkillAttack.png/25px-SkillAttack.png?97118e">60 (55+5)</p><p style="color: yellow; font-size: 24px">Atk Weight ⯀</p><p style="font-size: 24px;">Amt. 0x</p></h3>
+        <div class="skilleff">
+          <div class="coin"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><p style="font-size: 24px;">4</p><img src="https://limbuscompany.wiki.gg/images/thumb/Slash.png/25px-Slash.png?f764b5" width="45"><p style="font-size: 24px">+5</p></div>
+          <div class="batk"><p style="font-size: 18px"><p style="color: red">[Unclashable]</p><br>Kĩ năng này không kích hoạt kĩ năng phòng thủ của kẻ địch, những hiệu ứng từ bên ngoài không kích hoạt kĩ năng để được sử dụng lại</p><br><p style="font-size: 18px;">[Khi Sử Dụng] Khi có dưới 3 <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency, hủy kĩ năng này và nhận 2 <img src="https://limbuscompany.wiki.gg/images/thumb/Attack_Power_Up.png/25px-Attack_Power_Up.png?5d4425">Attack Power Up vào lượt sau.</p>
+            <br><p style="font-size: 18px;">[Khi Sử Dụng] Khi có ít nhất 3 <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency, nhận những hiệu ứng sau dựa trên Potency:<br>- Với mỗi 1 Potency : kĩ năng này gây +10% sát thương<br>- Khi có ít nhất 4 <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency, Base Power +1<br>- Khi có 5 <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency : Khi Đánh với Xu sử dụng lại cuối cùng, kích hoạt <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor_Burst.png/25px-Tremor_Burst.png?7613b5">Tremor Burst 2 lần; giảm <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor Count trên kẻ địch bởi 1
+              <br>[Kết Thúc Kĩ Năng] Mất <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] trên bản thân<br>[Kết Thúc Kĩ Năng] Lượt sau, chuyển Bộ Bài hiện tại thành một Bộ Bài ngẫu nhiên tương ứng với bộ kĩ năng của nhân vật này (một lần mỗi lượt)<br>[Kết Thúc Kĩ Năng] Lượt sau, nhận <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency bằng với số lượng Xu không được sử dụng</p>
+          </div>
+          <div class="watk"><p style="font-size: 24px"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="30">Sử dụng lại Xu này (<img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency - 1) lần (tối đa 4 lần)<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="30">[Khi Đánh] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor Count<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="30">[Khi Đánh] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking Count<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="30">[Xu Ngửa] Gắn 1 <img src="https://limbuscompany.wiki.gg/images/thumb/Defense_Level_Down.png/25px-Defense_Level_Down.png?ac158d">Defense Level Down</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content active" id="defenseskill">
+      <div class="row">
+        <h3><img src="https://limbuscompany.wiki.gg/images/thumb/Shuffle_Hands_-_Floral_Deck_Ishmael_Icon.png/74px-Shuffle_Hands_-_Floral_Deck_Ishmael_Icon.png?1613c7" width="240"><p style="font-size: 24px">Defensive Skill : Shuffle Hand - Floral Deck<img src="https://limbuscompany.wiki.gg/images/thumb/SkillAttack.png/25px-SkillAttack.png?97118e">58 (55+3)</p><p style="color: yellow; font-size: 24px">Atk Weight ⯀</p></h3>
+        <div class="skilleff">
+          <div class="coin"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><img src="https://limbuscompany.wiki.gg/images/thumb/Coin.png/26px-Coin.png?245b33" width="30"><p style="font-size: 18px">5</p><img src="https://limbuscompany.wiki.gg/images/thumb/Slash.png/25px-Slash.png?f764b5" width="45"><p style="font-size: 18px">+4</p></div>
+          <div class="batk"><p style="color: orange; font-size: 18px">[Clashable Counter]</p><br><p style="font-size: 18px;">[Bắt Đầu Chiến Đấu] <img src="https://limbuscompany.wiki.gg/images/thumb/Discard.png/25px-Discard.png?38f60e">Discard 2 kĩ năng với bậc thấp nhất trong toàn bộ ô kĩ năng của bản thân</p><p style="font-size: 18px;">[Bắt Đầu Chiến Đấu] Nếu kĩ năng này được trang bị vào ô kĩ năng bên trái ngoài cùng, chuyển Bộ Bài hiện tại thành một Bộ Bài ngẫu nhiên tương ứng với bộ kĩ năng của nhân vật này (một lần mỗi lượt; ngoại trừ Bộ Bài mà bản thân đang giữ)<br>[Bắt Đầu Chiến Đấu] Có 50% tỉ lệ để nhận 1 <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency (mỗi lần một lượt)<br>[Khi Sử Dụng] Coin Power +1 với mỗi 2 <img src="https://limbuscompany.wiki.gg/images/thumb/Bright_-%E5%85%89-.png/25px-Bright_-%E5%85%89-.png?cd8c83">Bright[光] Potency trên bản thân (tối đa 2)</p></div>
+          <div class="watk"><p style="font-size: 24px"><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect1.png/25px-CoinEffect1.png?90c3fe" width="30">[Khi Đánh] Gắn +1 <img src="https://limbuscompany.wiki.gg/images/thumb/Sinking.png/25px-Sinking.png?6da8c6">Sinking Count<br><img src="https://limbuscompany.wiki.gg/images/thumb/CoinEffect2.png/25px-CoinEffect2.png?b76dc0" width="30">[Khi Đánh] Gắn 2 <img src="https://limbuscompany.wiki.gg/images/thumb/Tremor.png/25px-Tremor.png?3233a7">Tremor</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+  // TAB LỚN
+  const tabs = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+      tabs.forEach(b => b.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.tab).classList.add("active");
+    });
+  });
+
+  // TAB CON (NESTED TABS)
+  function openSub(evt, subName) {
+    document.querySelectorAll(".sub-content").forEach(c => c.classList.remove("active"));
+    document.querySelectorAll(".sub-btn").forEach(b => b.classList.remove("active"));
+
+    document.getElementById(subName).classList.add("active");
+    evt.currentTarget.classList.add("active");
+}
+  window.onload = () => {
+    document.querySelector(".tab-btn").click();
+    document.querySelector(".sub-btn").click();
+};
+</script>
+
+
+</body>
+</html>
